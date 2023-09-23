@@ -1,0 +1,365 @@
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        margin: 0px;
+        line-height: 90px;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        width: 100%px;
+        height: 45px;
+        display: flex;
+    }
+
+    .header-category-iphone {
+        margin-left: 103px;
+    }
+
+    .header ul a {
+        text-decoration: none;
+        color: rgb(66, 66, 66);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+
+    .header ul li {
+        list-style-type: none;
+    }
+
+    .header li {
+        display: inline;
+    }
+
+    #text-header {
+        color: rgb(66, 66, 66);
+        font-size: 14px;
+    }
+
+    .category-body {
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    .frame1 {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+    }
+
+    .frame-title {
+        width: 1210px;
+        height: 50px;
+        margin-left: 145px;
+    }
+
+    .category-banner-frame {
+        width: 1210px;
+        height: 397px;
+        margin-left: 145px;
+    }
+
+    .banner {
+        width: 1250px;
+        padding: 0px;
+        height: 396px;
+        margin-left: 5px;
+    }
+
+    .category-banner-frame img {
+        border-radius: 8px;
+    }
+
+    .page-body {
+        width: 100%;
+        height: 2150px;
+        margin-top: 50px;
+    }
+
+    .list-of-iphoneType-frame {
+        width: 1210px;
+        height: 80px;
+        margin-left: 145px;
+        display: flex;
+    }
+
+    .list-iphoneType {
+        height: 45px;
+        width: 980px;
+        border-bottom: 5px solid #0066CC;
+        display: flex;
+        gap: 35px;
+        margin-top: 10px;
+
+    }
+
+    .all {
+        height: 70px;
+        width: 60px;
+    }
+
+    .click-all {
+        height: 40px;
+        width: 60px;
+    }
+
+    .click-all a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0066CC;
+        border-bottom: 2px solid #0066CC;
+        padding-bottom: 9px;
+    }
+
+    .iphone-series {
+        height: 70px;
+        width: 120px;
+    }
+
+    .click-iphone-series a {
+        font-size: 15px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #515154;
+    }
+
+    .compare {
+        width: 250px;
+        height: 60px;
+    }
+
+    .compare-iphone {
+        width: 160px;
+        height: 45px;
+        float: right;
+        background: #fff;
+        border: 1px solid #515154;
+        border-radius: 8px;
+    }
+
+    .compare-iphone a {
+        display: flex;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #515154;
+    }
+
+    .compare-iphone img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .compare-iphone-btn {
+        padding: 12px 15px;
+    }
+
+    .product-container {
+        margin-left: 145px;
+        width: 1210px;
+        height: 1330px;
+        column-gap: 25px;
+    }
+
+    .iphone-container {
+        height: 400px;
+        display: flex;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+
+    .product-frame {
+        height: 400px;
+        width: 285px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    #prod-label {
+        width: 85px;
+        height: 22px;
+        float: right;
+        padding: 5px;
+    }
+
+    #prod-img {
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+    #prod-name a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #1D1D1F;
+        line-height: 27px;
+        margin-left: 20px;
+    }
+
+    #newPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #0066CC;
+        display: inline;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    #oldPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        text-decoration: line-through;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    #discount {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    .pager li {
+        list-style-type: none;
+        display: inline;
+        margin: 0 5px;
+    }
+
+    .pager ul {
+        margin-left: 41.5%;
+    }
+
+    .pager li span {
+        min-width: 35px;
+        height: 35px;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        border: 1px solid #0066CC;
+    }
+
+    .pager span,
+    .pager a {
+        border-radius: 8px;
+    }
+
+    .pager a {
+        min-width: 35px;
+        height: 35px;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        border: 1px solid #0066CC;
+    }
+
+    .next-page {
+        background-image: url("https://shopdunk.com/Themes/SD/Content/images/next.png");
+        background-position: center;
+        background-repeat: no-repeat, repeat;
+        padding: 5px;
+        width: 35px;
+    }
+
+    .topic-block-body {
+        width: 1210px;
+        height: 230px;
+    }
+
+    .topic-block-body-frame {
+        width: 1210px;
+        height: 210px;
+        display: flex;
+        gap: 25px;
+        margin-left: 145px;
+    }
+
+    .topic-block-content {
+        width: 600px;
+        height: 210px;
+        display: flex;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .content-img-frame {
+        width: 250px;
+        height: 210px;
+    }
+
+    .content-img img {
+        width: 250px;
+        height: 210px;
+        border-radius: 8px;
+    }
+
+    .title {
+        width: 340px;
+        height: 210px;
+    }
+
+    .title h3 {
+        margin-left: 20px;
+        font-size: 23px;
+        padding: 20px;
+        color: #1D1D1F;
+    }
+
+    .title a {
+        margin-left: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #0066CC;
+        font-size: 15px;
+    }
+
+    .product-decription {
+        height: 500px;
+        width: 1517px;
+    }
+
+    .product-decription-frame {
+        height: 410px;
+        width: 1210px;
+        margin-left: 145px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .decription-content-frame {
+        height: 205px;
+        width: 1210px;
+
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-bottom: 7px;
+    }
+
+    .decription-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+        color: #515154;
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 0px;
+    }
