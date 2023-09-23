@@ -1,0 +1,572 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone</title>
+</head>
+<style type="text/css">
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        margin: 0px;
+        line-height: 90px;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        width: 100%px;
+        height: 45px;
+        display: flex;
+    }
+
+    .header-category-iphone {
+        margin-left: 103px;
+    }
+
+    .header ul a {
+        text-decoration: none;
+        color: rgb(66, 66, 66);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+
+    .header ul li {
+        list-style-type: none;
+    }
+
+    .header li {
+        display: inline;
+    }
+
+    #text-header {
+        color: rgb(66, 66, 66);
+        font-size: 14px;
+    }
+
+    .category-body {
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    .frame1 {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+    }
+
+    .frame-title {
+        width: 1210px;
+        height: 50px;
+        margin-left: 145px;
+    }
+
+    .category-banner-frame {
+        width: 1210px;
+        height: 397px;
+        margin-left: 145px;
+    }
+
+    .banner {
+        width: 1250px;
+        padding: 0px;
+        height: 396px;
+        margin-left: 5px;
+    }
+
+    .category-banner-frame img {
+        border-radius: 8px;
+    }
+
+    .page-body {
+        width: 100%;
+        height: 1340px;
+        margin-top: 50px;
+    }
+
+    .list-of-iphoneType-frame {
+        width: 1210px;
+        height: 80px;
+        margin-left: 145px;
+        display: flex;
+    }
+
+    .list-iphoneType {
+        height: 45px;
+        width: 980px;
+        border-bottom: 5px solid #0066CC;
+        display: flex;
+        gap: 35px;
+        margin-top: 10px;
+
+    }
+
+    .all {
+        height: 70px;
+        width: 60px;
+    }
+
+    .click-all {
+        height: 40px;
+        width: 60px;
+    }
+
+    .click-all a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0066CC;
+        border-bottom: 2px solid #0066CC;
+        padding-bottom: 9px;
+    }
+
+    .iphone-series {
+        height: 70px;
+        width: 120px;
+    }
+
+    .click-iphone-series a {
+        font-size: 15px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #515154;
+    }
+
+    .compare {
+        width: 250px;
+        height: 60px;
+    }
+
+    .compare-iphone {
+        width: 160px;
+        height: 45px;
+        float: right;
+        background: #fff;
+        border: 1px solid #515154;
+        border-radius: 8px;
+    }
+
+    .compare-iphone a {
+        display: flex;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #515154;
+    }
+
+    .compare-iphone img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .compare-iphone-btn {
+        padding: 12px 15px;
+    }
+
+    .product-container {
+        margin-left: 145px;
+        width: 1210px;
+        height: 500px;
+        column-gap: 25px;
+    }
+
+    .iphone-container {
+        height: 400px;
+        display: flex;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+
+    .product-frame {
+        height: 400px;
+        width: 285px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    #prod-label {
+        width: 85px;
+        height: 22px;
+        float: right;
+        padding: 5px;
+    }
+
+    #prod-img {
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+    #prod-name a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #1D1D1F;
+        line-height: 27px;
+        margin-left: 20px;
+    }
+
+    #newPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #0066CC;
+        display: inline;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    #oldPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        text-decoration: line-through;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    #discount {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    .pager li {
+        list-style-type: none;
+        display: inline;
+        margin: 0 5px;
+    }
+
+    .pager ul {
+        margin-left: 41.5%;
+    }
+
+    .pager li span {
+        min-width: 35px;
+        height: 35px;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        border: 1px solid #0066CC;
+    }
+
+    .pager span,
+    .pager a {
+        border-radius: 8px;
+    }
+
+    .pager a {
+        min-width: 35px;
+        height: 35px;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        border: 1px solid #0066CC;
+    }
+
+    .next-page {
+        background-image: url("https://shopdunk.com/Themes/SD/Content/images/prev.png");
+        background-position: center;
+        background-repeat: no-repeat, repeat;
+        padding: 5px;
+        width: 35px;
+    }
+
+    .topic-block-body {
+        width: 1210px;
+        height: 230px;
+    }
+
+    .topic-block-body-frame {
+        width: 1210px;
+        height: 210px;
+        display: flex;
+        gap: 25px;
+        margin-left: 145px;
+    }
+
+    .topic-block-content {
+        width: 600px;
+        height: 210px;
+        display: flex;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .content-img-frame {
+        width: 250px;
+        height: 210px;
+    }
+
+    .content-img img {
+        width: 250px;
+        height: 210px;
+        border-radius: 8px;
+    }
+
+    .title {
+        width: 340px;
+        height: 210px;
+    }
+
+    .title h3 {
+        margin-left: 20px;
+        font-size: 23px;
+        padding: 20px;
+        color: #1D1D1F;
+    }
+
+    .title a {
+        margin-left: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #0066CC;
+        font-size: 15px;
+    }
+
+    .product-decription {
+        height: 500px;
+        width: 1517px;
+    }
+
+    .product-decription-frame {
+        height: 410px;
+        width: 1210px;
+        margin-left: 145px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .decription-content-frame {
+        height: 205px;
+        width: 1210px;
+
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-bottom: 7px;
+    }
+
+    .decription-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+        color: #515154;
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 0px;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <ul class="header-category-iphone">
+            <li id="text-header">
+                <a href="Home.html">Trang chủ &nbsp;</a>
+                <span class="delimiter">›&nbsp;</span>
+            </li>
+            <li id="text-header">
+                iPhone
+            </li>
+        </ul>
+    </div>
+    <div class="category-body">
+        <div class="frame1">
+            <div class="frame-title">
+                <h1>iPhone</h1>
+            </div>
+        </div>
+        <div class="category-banner">
+            <div class="category-banner-frame">
+                <div class="banner">
+                    <a href="#"><img
+                            src="https://shopdunk.com/images/uploaded/LINH%20CHERRYYYYYYY/danh%20m%E1%BB%A5c%20iphone%20ipad%20t7-10.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="list-of-iphoneType-frame">
+                <div class="list-iphoneType">
+                    <div class="all">
+                        <div class="click-all">
+                            <a href="#">Tất cả</a>
+                        </div>
+                    </div>
+                    <div class="iphone-series">
+                        <div class="click-iphone-series">
+                            <a href="#">iPhone 15 series</a>
+                        </div>
+                    </div>
+                    <div class="iphone-series">
+                        <div class="click-iphone-series">
+                            <a href="#">iPhone 14 series</a>
+                        </div>
+                    </div>
+                    <div class="iphone-series">
+                        <div class="click-iphone-series">
+                            <a href="#">iPhone 13 series</a>
+                        </div>
+                    </div>
+                    <div class="iphone-series">
+                        <div class="click-iphone-series">
+                            <a href="#">iPhone 12 series</a>
+                        </div>
+                    </div>
+                    <div class="iphone-series">
+                        <div class="click-iphone-series">
+                            <a href="#">iPhone 11 series</a>
+                        </div>
+                    </div>
+                    <div class="iphone-series">
+                        <div class="click-iphone-series">
+                            <a href="#">iPhone SE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="compare">
+                    <div class="compare-iphone">
+                        <a href="#" class="compare-iphone-btn"><img
+                                src="https://shopdunk.com/images//uploaded-source/icon//comparison.png">&nbsp;So
+                            sánh
+                            iPhone</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="iphone-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0000597_iphone-13-mini_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">iPhone 13 mini</a></h3>
+                        <p id="newPrice">16.990.000₫</p> &nbsp;
+                        <p id="oldPrice">21.990.000₫</p> &nbsp;
+                        <p id="discount">-22%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0000600_iphone-se-2022_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">iPhone SE (2022)</a></h3>
+                        <p id="newPrice">9.990.000₫</p> &nbsp;
+                        <p id="oldPrice">12.990.000₫</p> &nbsp;
+                        <p id="discount">-23%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0006794_iphone-12-64gb_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">iPhone 12 64GB</a></h3>
+                        <p id="newPrice">13.490.000₫</p> &nbsp;
+                        <p id="oldPrice">22.990.000₫</p> &nbsp;
+                        <p id="discount">-41%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0006849_iphone-12-128gb_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">iPhone 12 128GB</a></h3>
+                        <p id="newPrice">17.590.000₫</p> &nbsp;
+                        <p id="oldPrice">24.990.000₫</p> &nbsp;
+                        <p id="discount">-29%</p>
+                    </div>
+                </div>
+                <div class="pager">
+                    <ul>
+                        <li class="next-page">
+                            <a href="Category.html"></a>
+                        </li>
+                        <li class="individual-page">
+                            <a href="Category.html">1</a>
+                        </li>
+                        <li class="current-page">
+                            <span>2</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topic-block-body">
+                <div class="topic-block-body-frame">
+                    <div class="topic-block-content">
+                        <div class="content-img-frame">
+                            <div class="content-img">
+                                <a href="#"><img
+                                        src="https://shopdunk.com/images/uploaded/trang%20danh%20muc/iphone/Image-Standard.png"></a>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#">
+                                <h3>Tìm iPhone <br> phù hợp với bạn</h3>
+                            </a>
+                            <a href="#">So sánh các iPhone ›</a>
+                        </div>
+                    </div>
+                    <div class="topic-block-content">
+                        <div class="content-img-frame">
+                            <div class="content-img">
+                                <a href="#"><img
+                                        src="https://shopdunk.com/images/uploaded/trang%20danh%20muc/iphone/Image-Standard-1.png"></a>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#">
+                                <h3>Phụ kiện iPhone <br> thường mua kèm</h3>
+                            </a>
+                            <a href="#">Tìm phụ kiện ›</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-decription">
+                <div class="product-decription-frame">
+                    <div class="decription-content-frame">
+                        <div class="decription-content">
+                            <h2>Lịch sử hình thành, phát triển của iPhone</h2>
+                            <p>
+                                iPhone là dòng điện thoại thông minh được phát triển từ Apple Inc, được ra mắt lần đầu
+                                tiên bởi Steve Jobs và mở bán năm 2007. Bên cạnh tính năng của một máy điện thoại thông
+                                thường, iPhone còn được trang bị màn hình cảm ứng, camera, khả năng chơi nhạc và chiếu
+                                phim, trình duyệt web... Phiên bản thứ hai là iPhone 3G ra mắt tháng 7 năm 2008, được
+                                trang bị thêm hệ thống định vị toàn cầu, mạng 3G tốc độ cao. Trải qua 15 năm tính đến
+                                nay đã có đến 34 mẫu iPhone được sản xuất từ dòng 2G cho đến iPhone 13 Pro Max và Apple
+                                là một trong những thương hiệu điện thoại được yêu thích và sử dụng phổ biến nhất trên
+                                thế giới.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="decription-content-frame">
+                        <div class="decription-content">
+                            <h2 style="margin-top:5px ;">iPhone có những mã máy nào?</h2>
+                            <p>
+                                Những chiếc iPhone do Apple phân phối tại thị trường nước nào thì sẽ mang mã của nước
+                                đó. Ví dụ: LL: Mỹ, ZA: Singapore, TH: Thái Lan, JA: Nhật Bản, Những mã này xuất hiện tại
+                                Việt Nam đều là hàng xách tay, nhập khẩu. Còn tại Việt Nam, iPhone sẽ được mang mã VN/A.
+                                Tất cả các mã này đều là hàng chính hãng phân phối của Apple. Lợi thế khi bạn sử dụng
+                                iPhone mã VN/A đó là chế độ bảo hành tốt hơn với 12 tháng theo tiêu chuẩn của Apple.
+                                iPhone của bạn sẽ được bảo hành tại tất cả các trung tâm bảo hành Apple tại Việt Nam,
+                                một số mã quốc tế bị từ chối bảo hành và phải đem ra các trung tâm bảo hành Apple tại
+                                nước ngoài. Rất là phức tạp đúng không nào?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
