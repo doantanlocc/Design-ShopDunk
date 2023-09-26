@@ -1,0 +1,598 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Âm thanh</title>
+</head>
+
+<style type="text/css">
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        margin: 0px;
+        line-height: 90px;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0px;
+    }
+
+    .header {
+        width: 100%px;
+        height: 45px;
+        display: flex;
+    }
+
+    .header-category-iphone {
+        margin-left: 103px;
+    }
+
+    .header ul a {
+        text-decoration: none;
+        color: rgb(66, 66, 66);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+
+    .header ul li {
+        list-style-type: none;
+    }
+
+    .header li {
+        display: inline;
+    }
+
+    #text-header {
+        color: rgb(66, 66, 66);
+        font-size: 14px;
+    }
+
+    .category-body {
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    .frame1 {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+    }
+
+    .frame-title {
+        width: 1210px;
+        height: 50px;
+        margin-left: 145px;
+    }
+
+    .category-banner-frame {
+        width: 1210px;
+        height: 397px;
+        margin-left: 145px;
+    }
+
+    .banner {
+        width: 1250px;
+        padding: 0px;
+        height: 396px;
+        margin-left: 5px;
+    }
+
+    .category-banner-frame img {
+        border-radius: 8px;
+        width: 1210px;
+        height: 397px;
+    }
+
+    .page-body {
+        width: 100%;
+        height: 2150px;
+        margin-top: 50px;
+    }
+
+    .list-of-soundType-frame {
+        width: 1210px;
+        height: 80px;
+        margin-left: 145px;
+        display: flex;
+    }
+
+    .list-soundType {
+        height: 45px;
+        width: 980px;
+        display: flex;
+        gap: 35px;
+        border-bottom: 5px solid #0066CC;
+        margin-top: 10px;
+
+    }
+
+    .all {
+        height: 70px;
+        width: 60px;
+    }
+
+    .click-all {
+        height: 40px;
+        width: 60px;
+    }
+
+    .click-all a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0066CC;
+        border-bottom: 2px solid #0066CC;
+        padding-bottom: 9px;
+    }
+
+    .sound-series {
+        height: 70px;
+        width: 70px;
+        padding: 5px;
+    }
+
+    .click-sound-series a {
+        font-size: 15px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #515154;
+    }
+
+    .order {
+        width: 250px;
+        height: 60px;
+    }
+
+    .order select {
+        width: 160px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    select {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777;
+        border: 0.5px solid #e9e3e3;
+    }
+
+    #list {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .compare-iphone {
+        width: 160px;
+        height: 45px;
+        float: right;
+    }
+
+    .product-container {
+        margin-left: 145px;
+        width: 1210px;
+        height: 1280px;
+        column-gap: 25px;
+    }
+
+    .ipad-container {
+        height: 400px;
+        display: flex;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+
+    .product-frame {
+        height: 400px;
+        width: 285px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    #prod-label {
+        width: 65px;
+        height: 40px;
+        float: right;
+        padding: 5px;
+    }
+
+    #prod-img {
+        margin-top: 0px;
+        margin-left: 25px;
+    }
+
+    #prod-name a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #1D1D1F;
+        line-height: 27px;
+        margin-left: 20px;
+    }
+
+    #newPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #0066CC;
+        display: inline;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    #oldPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        text-decoration: line-through;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    #discount {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    .pager li {
+        list-style-type: none;
+        display: inline;
+        margin: 0 5px;
+    }
+
+    .pager ul {
+        margin-left: 41.5%;
+    }
+
+    .pager li span {
+        min-width: 35px;
+        height: 35px;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        border: 1px solid #0066CC;
+    }
+
+    .pager span,
+    .pager a {
+        border-radius: 8px;
+    }
+
+    .pager a {
+        min-width: 35px;
+        height: 35px;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        border: 1px solid #0066CC;
+    }
+
+    .next-page {
+        background-image: url("https://shopdunk.com/Themes/SD/Content/images/next.png");
+        background-position: center;
+        background-repeat: no-repeat, repeat;
+        padding: 5px;
+        width: 35px;
+    }
+
+    .product-decription {
+        height: 500px;
+        width: 1517px;
+        margin-top: 60px;
+    }
+
+    .product-decription-frame {
+        height: 410px;
+        width: 1210px;
+        margin-left: 145px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .decription-content-frame {
+        height: 205px;
+        width: 1210px;
+
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-bottom: 7px;
+    }
+
+    .decription-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+        color: #515154;
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 0px;
+    }
+
+    .decription-content ul li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-left: 35px;
+        color: #515154;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <ul class="header-category-iphone">
+            <li id="text-header">
+                <a href="Home.html">Trang chủ &nbsp;</a>
+                <span class="delimiter">›&nbsp;</span>
+            </li>
+            <li id="text-header">
+                Âm thanh
+            </li>
+        </ul>
+    </div>
+    <div class="category-body">
+        <div class="frame1">
+            <div class="frame-title">
+                <h1>Âm thanh</h1>
+            </div>
+        </div>
+        <div class="category-banner">
+            <div class="category-banner-frame">
+                <div class="banner">
+                    <a href="#"><img
+                            src="https://shopdunk.com/images/uploaded/banner/Banner%20th%C3%A1ng%208/PCjbl.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="list-of-soundType-frame">
+                <div class="list-soundType">
+                    <div class="all">
+                        <div class="click-all">
+                            <a href="#">Tất cả</a>
+                        </div>
+                    </div>
+                    <div class="sound-series">
+                        <div class="click-sound-series">
+                            <a href="#">Airpods</a>
+                        </div>
+                    </div>
+                    <div class="sound-series" style="width: 90px;">
+                        <div class="click-sound-series">
+                            <a href="#">Airpods Pro</a>
+                        </div>
+                    </div>
+                    <div class="sound-series">
+                        <div class="click-sound-series">
+                            <a href="#">EarPods</a>
+                        </div>
+                    </div>
+                    <div class="sound-series">
+                        <div class="click-sound-series">
+                            <a href="#">Marshall</a>
+                        </div>
+                    </div>
+                    <div class="sound-series" style="width: 115px;">
+                        <div class="click-sound-series">
+                            <a href="#">Harmon Kardon</a>
+                        </div>
+                    </div>
+                    <div class="sound-series" style="width: 40px;">
+                        <div class="click-sound-series">
+                            <a href="#">JBL</a>
+                        </div>
+                    </div>
+                    <div class="sound-series">
+                        <div class="click-sound-series">
+                            <a href="#">Google</a>
+                        </div>
+                    </div>
+                    <div class="sound-series">
+                        <div class="click-sound-series">
+                            <a href="#">Sony</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="compare-iphone">
+                        <select id="list" style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;">
+                            <option value="value1">Thứ tự hiển thị</option>
+                            <option value="value2">Giá cao đến thấp</option>
+                            <option value="value3">Mới nhất</option>
+                            <option value="value4">Tên: A đến Z</option>
+                            <option value="value5">Tên: Z đến A</option>
+                            <option value="value6">Giá thấp đến cao</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="ipad-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0015612_airpods-2_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 16px;"><a href="DetailProduct.html">AirPods 2</a></h3>
+                        <p id="newPrice">2.590.000₫</p> &nbsp;
+                        <p id="oldPrice">4.390.000₫</p> &nbsp;
+                        <p id="discount">-41%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" style="width: 69px; height: 30px;"
+                            src="https://shopdunk.com/images/uploaded/icon/san-hang-n.png">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0021502_apple-watch-series-9-nhom-gps-cellular-41mm-sport-loop_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Loa Marshall Acton II<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Bluetooth</a>
+                        </h3>
+                        <p id="newPrice">6.190.000₫</p> &nbsp;
+                        <p id="oldPrice">7.990.000₫</p> &nbsp;
+                        <p id="discount">-22%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" style="width: 69px; height: 30px;"
+                            src="https://shopdunk.com/images/uploaded/icon/san-hang-n.png">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0001183_loa-marshall-stanmore-ii-bluetooth_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Loa Marshall Stanmore II<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Bluetooth</a></h3>
+                        <p id="newPrice">6.890.000₫</p> &nbsp;
+                        <p id="oldPrice">11.190.000₫</p> &nbsp;
+                        <p id="discount">-38%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" style="width: 69px; height: 34px;" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0001598_loa-jbl-flip-6_240.jpeg">
+                        <h3 id="prod-name" style="margin-bottom: 20px;"><a href="DetailProduct.html">Loa JPL Flip 6
+                            </a>
+                        </h3>
+                        <p id="newPrice">2.590.000₫</p> &nbsp;
+                        <p id="oldPrice">2.990.000₫</p> &nbsp;
+                        <p id="discount">-13%</p>
+                    </div>
+                </div>
+                <div class="ipad-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0002153_loa-jbl-go-3_240.webp">
+                        <h3 id="prod-name" style="margin-bottom: 16px;"><a href="DetailProduct.html">Loa JBL GO 3</a>
+                        </h3>
+                        <p id="newPrice">940.000₫</p> &nbsp;
+                        <p id="oldPrice">1.090.000₫</p> &nbsp;
+                        <p id="discount">-15%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0017375_loa-harman-kardon-onyx-studio-8_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Loa Harman Kardon Onyx
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;Studio 8</a></h3>
+                        <p id="newPrice">5.890.000₫</p> &nbsp;
+                        <p id="oldPrice">6.990.000₫</p> &nbsp;
+                        <p id="discount">-15%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0002142_loa-harman-kardon-go-play-mini_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Loa Harman Kardon Go +
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;Play Mini</a></h3>
+                        <p id="newPrice">5.099.000₫</p> &nbsp;
+                        <p id="oldPrice">5.990.000₫</p> &nbsp;
+                        <p id="discount">-15%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0002144_loa-harman-kardon-soundsticks-4_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Loa Harman Kardon
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;Soundsticks 4</a></h3>
+                        <p id="newPrice">7.999.000₫</p> &nbsp;
+                        <p id="oldPrice">8.990.000₫</p> &nbsp;
+                        <p id="discount">-10%</p>
+                    </div>
+                </div>
+                <div class="ipad-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0000211_airpods-pro-2_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 16px;"><a href="DetailProduct.html">AirPods Pro 2
+                            </a></h3>
+                        <p id="newPrice">5.790.000₫</p> &nbsp;
+                        <p id="oldPrice">6.990.000₫</p> &nbsp;
+                        <p id="discount">-15%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0012005_airpods-max_240.webp">
+                        <h3 id="prod-name" style="margin-bottom: 16px;"><a href="DetailProduct.html">AirPods Max</a>
+                        </h3>
+                        <p id="newPrice">12.890.000₫</p> &nbsp;
+                        <p id="oldPrice">13.990.000₫</p> &nbsp;
+                        <p id="discount">-10%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0018874_tai-nghe-marshall-major-iv_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 16px;"><a href="DetailProduct.html">Tai nghe Marshall
+                                Major IV</a></h3>
+                        <p id="newPrice">3.990.000₫</p> &nbsp;
+                        <p id="oldPrice">4.990.000₫</p> &nbsp;
+                        <p id="discount">-20%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0018880_tai-nghe-marshall-minor-iii_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 16px;"><a href="DetailProduct.html">Tai nghe Marshall
+                                Major III</a></h3>
+                        <p id="newPrice">2.790.000₫</p> &nbsp;
+                        <p id="oldPrice">3.990.000₫</p> &nbsp;
+                        <p id="discount">-9%</p>
+                    </div>
+                </div>
+                <div class="pager">
+                    <ul>
+                        <li class="current-page">
+                            <span>1</span>
+                        </li>
+                        <li class="individual-page">
+                            <a href="CategorySound2.html">2</a>
+                        </li>
+                        <li class="next-page">
+                            <a href="CategorySound2.html"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-decription">
+                <div class="product-decription-frame">
+                    <div class="decription-content-frame" style="height: 80px;">
+                        <div class="decription-content">
+                            <h2>Thiết bị âm thanh - Mnag lại trải nghiệm nghe nhạc cực đã </h2>
+                            <p>
+                                Nghe nhạc, xem phim là nhu cầu thường ngày trong cuộc sống, giúp chúng ta thư giãn sau
+                                quãng thời gian học tập và làm việc căng thẳng. Tuy nhiên, để nâng cao trải nghiệm và có
+                                được những giây phút giải trí ấn tượng hơn, người dùng nên mua những thiết bị âm thanh
+                                chuyên dụng.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="decription-content-frame">
+                        <div class="decription-content">
+                            <h2>Các thiết bị âm thanh hiện đại đang có mặt tại ShopDunk?</h2>
+                            <p>
+                                <strong>Tai nghe dây</strong>
+                            </p>
+                            <p>
+                                <strong>Tai nghe Bluetooth</strong>
+                            </p>
+                            <p>
+                                <strong>Loa Bluetooth di động</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

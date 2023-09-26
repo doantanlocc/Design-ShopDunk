@@ -1,0 +1,621 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad</title>
+</head>
+<style type="text/css">
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        margin: 0px;
+        line-height: 90px;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        width: 100%px;
+        height: 45px;
+        display: flex;
+    }
+
+    .header-category-iphone {
+        margin-left: 103px;
+    }
+
+    .header ul a {
+        text-decoration: none;
+        color: rgb(66, 66, 66);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+
+    .header ul li {
+        list-style-type: none;
+    }
+
+    .header li {
+        display: inline;
+    }
+
+    #text-header {
+        color: rgb(66, 66, 66);
+        font-size: 14px;
+    }
+
+    .category-body {
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    .frame1 {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+    }
+
+    .frame-title {
+        width: 1210px;
+        height: 50px;
+        margin-left: 145px;
+    }
+
+    .category-banner-frame {
+        width: 1210px;
+        height: 397px;
+        margin-left: 145px;
+    }
+
+    .banner {
+        width: 1250px;
+        padding: 0px;
+        height: 396px;
+        margin-left: 5px;
+    }
+
+    .category-banner-frame img {
+        border-radius: 8px;
+    }
+
+    .page-body {
+        width: 100%;
+        height: 2150px;
+        margin-top: 50px;
+    }
+
+    .list-of-ipadType-frame {
+        width: 1210px;
+        height: 80px;
+        margin-left: 145px;
+        display: flex;
+    }
+
+    .list-ipadType {
+        height: 45px;
+        width: 980px;
+        display: flex;
+        gap: 25px;
+        margin-top: 10px;
+
+    }
+
+    .all {
+        height: 70px;
+        width: 60px;
+    }
+
+    .click-all {
+        height: 40px;
+        width: 60px;
+    }
+
+    .click-all a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0066CC;
+        border-bottom: 2px solid #0066CC;
+        padding-bottom: 9px;
+    }
+
+    .ipad-series {
+        height: 70px;
+        width: 85px;
+        padding: 5px;
+    }
+
+    .click-ipad-series a {
+        font-size: 15px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #515154;
+    }
+
+    .order {
+        width: 250px;
+        height: 60px;
+    }
+
+    .order select {
+        width: 160px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    select {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777;
+        border: 0.5px solid #e9e3e3;
+    }
+
+    #list {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .compare-iphone {
+        width: 160px;
+        height: 45px;
+        float: right;
+    }
+
+    .product-container {
+        margin-left: 145px;
+        width: 1210px;
+        height: 1280px;
+        column-gap: 25px;
+    }
+
+    .ipad-container {
+        height: 400px;
+        display: flex;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+
+    .product-frame {
+        height: 400px;
+        width: 285px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    #prod-label {
+        width: 65px;
+        height: 40px;
+        float: right;
+        padding: 5px;
+    }
+
+    #prod-img {
+        margin-top: 0px;
+        margin-left: 25px;
+    }
+
+    #prod-name a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #1D1D1F;
+        line-height: 27px;
+        margin-left: 20px;
+    }
+
+    #newPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #0066CC;
+        display: inline;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    #oldPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        text-decoration: line-through;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    #discount {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    .topic-block-body {
+        width: 1210px;
+        height: 230px;
+    }
+
+    .topic-block-body-frame {
+        width: 1210px;
+        height: 210px;
+        display: flex;
+        gap: 25px;
+        margin-left: 145px;
+    }
+
+    .topic-block-content {
+        width: 600px;
+        height: 210px;
+        display: flex;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .content-img-frame {
+        width: 250px;
+        height: 210px;
+    }
+
+    .content-img img {
+        width: 250px;
+        height: 210px;
+        border-radius: 8px;
+    }
+
+    .title {
+        width: 340px;
+        height: 210px;
+    }
+
+    .title h3 {
+        margin-left: 20px;
+        font-size: 23px;
+        padding: 20px;
+        color: #1D1D1F;
+    }
+
+    .title a {
+        margin-left: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #0066CC;
+        font-size: 15px;
+    }
+
+    .product-decription {
+        height: 500px;
+        width: 1517px;
+    }
+
+    .product-decription-frame {
+        height: 410px;
+        width: 1210px;
+        margin-left: 145px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .decription-content-frame {
+        height: 205px;
+        width: 1210px;
+
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-bottom: 7px;
+    }
+
+    .decription-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+        color: #515154;
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 0px;
+    }
+
+    .decription-content ul li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-left: 35px;
+        color: #515154;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <ul class="header-category-iphone">
+            <li id="text-header">
+                <a href="Home.html">Trang chủ &nbsp;</a>
+                <span class="delimiter">›&nbsp;</span>
+            </li>
+            <li id="text-header">
+                iPad
+            </li>
+        </ul>
+    </div>
+    <div class="category-body">
+        <div class="frame1">
+            <div class="frame-title">
+                <h1>iPad</h1>
+            </div>
+        </div>
+        <div class="category-banner">
+            <div class="category-banner-frame">
+                <div class="banner">
+                    <a href="#"><img
+                            src="https://shopdunk.com/images/uploaded/LINH%20CHERRYYYYYYY/danh%20m%E1%BB%A5c%20iphone%20ipad%20t7-08.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="list-of-ipadType-frame">
+                <div class="list-ipadType">
+                    <div class="all">
+                        <div class="click-all">
+                            <a href="#">Tất cả</a>
+                        </div>
+                    </div>
+                    <div class="ipad-series">
+                        <div class="click-ipad-series">
+                            <a href="#">iPad Pro M1</a>
+                        </div>
+                    </div>
+                    <div class="ipad-series">
+                        <div class="click-ipad-series">
+                            <a href="#">iPad Pro M2</a>
+                        </div>
+                    </div>
+                    <div class="ipad-series">
+                        <div class="click-ipad-series">
+                            <a href="#">iPad Air</a>
+                        </div>
+                    </div>
+                    <div class="ipad-series">
+                        <div class="click-ipad-series">
+                            <a href="#">iPad 9</a>
+                        </div>
+                    </div>
+                    <div class="ipad-series">
+                        <div class="click-ipad-series">
+                            <a href="#">iPad 10</a>
+                        </div>
+                    </div>
+                    <div class="ipad-series">
+                        <div class="click-ipad-series">
+                            <a href="#">iPad Mini</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="compare-iphone">
+                        <select id="list" style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;">
+                            <option value="value1">Thứ tự hiển thị</option>
+                            <option value="value2">Giá cao đến thấp</option>
+                            <option value="value3">Mới nhất</option>
+                            <option value="value4">Tên: A đến Z</option>
+                            <option value="value5">Tên: Z đến A</option>
+                            <option value="value6">Giá thấp đến cao</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="ipad-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://shopdunk.com/images/uploaded/icon/xatonkho.png">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0000594_ipad-air-4_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 27px;"><a href="DetailProduct.html">iPad Air 4</a></h3>
+                        <p id="newPrice">14.990.000₫</p> &nbsp;
+                        <p id="oldPrice">19.990.000₫</p> &nbsp;
+                        <p id="discount">-25%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0007301_ipad-pro-m2-129-inch-wifi-128gb_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 0px;"><a href="DetailProduct.html">iPad Pro M2 129 inch
+                                Wifi<br>&nbsp;&nbsp;&nbsp;&nbsp;128GB</a>
+                        </h3>
+                        <p id="newPrice">28.390.000₫</p> &nbsp;
+                        <p id="oldPrice">31.990.000₫</p> &nbsp;
+                        <p id="discount">-11%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0009725_ipad-gen-10-th-109-inch-wifi-64gb_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 0px;"><a href="DetailProduct.html">iPad Gen 10 th 10.9
+                                inch<br>&nbsp;&nbsp;&nbsp;&nbsp;Wifi 64GB</a></h3>
+                        <p id="newPrice">25.490.000₫</p> &nbsp;
+                        <p id="oldPrice">27.990.000₫</p> &nbsp;
+                        <p id="discount">-8%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://shopdunk.com/images/uploaded/icon/xatonkho.png">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0010883_ipad-pro-m1-129-inch-wifi-cellular-512gb_240.webp">
+                        <h3 id="prod-name" style="margin-bottom: 0px;"><a href="DetailProduct.html">iPad Pro M1 12.9
+                                inch
+                                Wifi<br>&nbsp;&nbsp;&nbsp;&nbsp;Cellular 512GB</a>
+                        </h3>
+                        <p id="newPrice">28.290.000₫</p> &nbsp;
+                        <p id="oldPrice">30.990.000₫</p> &nbsp;
+                        <p id="discount">-8%</p>
+                    </div>
+                </div>
+                <div class="ipad-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0006205_ipad-gen-9-102-inch-wifi-64gb_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 0px;"><a href="DetailProduct.html">iPad gen 9 10.2 inch
+                                Wifi<br>&nbsp;&nbsp;&nbsp;&nbsp;64GB</a></h3>
+                        <p id="newPrice">6.890.000₫</p> &nbsp;
+                        <p id="oldPrice">9.990.000₫</p> &nbsp;
+                        <p id="discount">-31%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0007071_ipad-pro-m2-11-inch-wifi-128gb_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 0px;"><a href="DetailProduct.html">iPad Pro M2 11 inch
+                                Wifi
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;128GB</a></h3>
+                        <p id="newPrice">20.190.000₫</p> &nbsp;
+                        <p id="oldPrice">23.990.000₫</p> &nbsp;
+                        <p id="discount">-15%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0007186_ipad-pro-m2-11-inch-wifi-cellular-128gb_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 0px;"><a href="DetailProduct.html">iPad Pro M2 11 inch
+                                Wifi<br>&nbsp;&nbsp;&nbsp;&nbsp;Cellular 128GB</a></h3>
+                        <p id="newPrice">23.990.000₫</p> &nbsp;
+                        <p id="oldPrice">27.990.000₫</p> &nbsp;
+                        <p id="discount">-14%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0019243_ipad-air-5-wifi-64gb_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 28px;"><a href="DetailProduct.html">iPad Air 5 Wifi
+                                64GB</a></h3>
+                        <p id="newPrice">13.490.000₫</p> &nbsp;
+                        <p id="oldPrice">16.990.000₫</p> &nbsp;
+                        <p id="discount">-20%</p>
+                    </div>
+                </div>
+                <div class="ipad-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0019294_ipad-air-5-wifi-256gb_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 28px;"><a href="DetailProduct.html">iPad Air 5 Wifi
+                                256GB
+                            </a></h3>
+                        <p id="newPrice">17.990.000₫</p> &nbsp;
+                        <p id="oldPrice">19.990.000₫</p> &nbsp;
+                        <p id="discount">-10%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0019345_ipad-air-5-wifi-cellular-64gb_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 0px;"><a href="DetailProduct.html">iPad Air 5 Wifi
+                                Cellular
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;64GB</a></h3>
+                        <p id="newPrice">16.990.000₫</p> &nbsp;
+                        <p id="oldPrice">20.990.000₫</p> &nbsp;
+                        <p id="discount">-19%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0019396_ipad-air-5-wifi-cellular-256gb_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 0px;"><a href="DetailProduct.html">iPad Air 5 Wifi
+                                Cellular
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;256GB</a></h3>
+                        <p id="newPrice">21.990.000₫</p> &nbsp;
+                        <p id="oldPrice">23.990.000₫</p> &nbsp;
+                        <p id="discount">-8%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" src="https://shopdunk.com/images/thumbs/0000593_ipad-mini-6_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 28px;"><a href="DetailProduct.html">iPad Mini 6
+                            </a></h3>
+                        <p id="newPrice">10.990.000₫</p> &nbsp;
+                        <p id="oldPrice">14.990.000₫</p> &nbsp;
+                        <p id="discount">-26%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="topic-block-body">
+                <div class="topic-block-body-frame">
+                    <div class="topic-block-content">
+                        <div class="content-img-frame">
+                            <div class="content-img">
+                                <a href="#"><img
+                                        src="https://shopdunk.com/images/uploaded/trang%20danh%20muc/ipad/Image-Standard-2.png"></a>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#">
+                                <h3>Tìm iPhone <br> phù hợp với bạn</h3>
+                            </a>
+                            <a href="#">So sánh các iPhone ›</a>
+                        </div>
+                    </div>
+                    <div class="topic-block-content">
+                        <div class="content-img-frame">
+                            <div class="content-img">
+                                <a href="#"><img
+                                        src="https://shopdunk.com/images/uploaded/trang%20danh%20muc/ipad/Image-Standard-3.png"></a>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#">
+                                <h3>Phụ kiện iPhone <br> thường mua kèm</h3>
+                            </a>
+                            <a href="#">Tìm phụ kiện ›</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-decription">
+                <div class="product-decription-frame">
+                    <div class="decription-content-frame" style="height: 130px;">
+                        <div class="decription-content">
+                            <h2>iPad là gì ?</h2>
+                            <p style="margin-bottom: 0px;">
+                                <a href="#">iPad</a> là máy tính bảng do Apple Inc. phát triển. Được công bố vào ngày 27
+                                tháng 1 năm 2010, thiết bị này tạo ra một phân loại mới giữa điện thoại thông minh và
+                                máy tính xách tay.
+                                Tương tự về tính năng so với thiết bị nhỏ và yếu hơn là iPhone hoặc iPod touch, iPad
+                                cũng hoạt động trên cùng hệ điều hành iPhone OS đã được sửa đổi với giao diện được thiết
+                                kế lại để phù hợp với màn hình lớn.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="decription-content-frame">
+                        <div class="decription-content">
+                            <h2 style="margin-top: 0px;">Tại sao nên mua iPad ?</h2>
+                            <p>
+                                iPad được trang bị các tính năng tiện ích để phục vụ công việc, nhu cầu giải trí hiệu
+                                quả. Trên thực tế vai trò của iPad trong học tập hay làm việc cũng không hề nhỏ nhờ các
+                                tính năng:
+                            <ul>
+                                <li>Thiết kế hiện đại và sang chảnh, nhiều màu sắc đa dạng: Xám, Bạc, Vàng Hồng, Xanh
+                                    Green, Xanh Blue, Tím,..</li>
+                                <li>Gọn nhẹ chỉ khoảng 300g. Bạn có thể mang theo mọi nơi một cách thuận tiện.</li>
+                                <li>Màn hình sắc nét, rộng, với cảm ứng đa điểm, góc nhìn thoáng giúp cho việc xem phim,
+                                    đọc báo hay chơi game dễ dàng và thú vị hơn.</li>
+                                <li>Kết nối mạng 4G, 5G mọi lúc mọi nơi, phục vụ nhu cầu sử dụng một cách nhanh nhất.
+                                </li>
+                                <li>Thời lượng pin lên đến 10 tiếng thoải mái sử dụng cả ngày, mang đến trải nghiệm trọn
+                                    vẹn nhất.</li>
+                                <li>Hơn một triệu ứng dụng được thiết kế riêng cho iPad để làm việc hiệu quả, trò chơi,
+                                    du lịch, hình ảnh, AR, học tập, v.v.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

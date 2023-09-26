@@ -1,0 +1,613 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        margin: 0px;
+        line-height: 90px;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0px;
+    }
+
+    .header {
+        width: 100%px;
+        height: 45px;
+        display: flex;
+    }
+
+    .header-category-iphone {
+        margin-left: 103px;
+    }
+
+    .header ul a {
+        text-decoration: none;
+        color: rgb(66, 66, 66);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+
+    .header ul li {
+        list-style-type: none;
+    }
+
+    .header li {
+        display: inline;
+    }
+
+    #text-header {
+        color: rgb(66, 66, 66);
+        font-size: 14px;
+    }
+
+    .category-body {
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    .frame1 {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+    }
+
+    .frame-title {
+        width: 1210px;
+        height: 50px;
+        margin-left: 145px;
+    }
+
+    .category-banner-frame {
+        width: 1210px;
+        height: 397px;
+        margin-left: 145px;
+    }
+
+    .banner {
+        width: 1250px;
+        padding: 0px;
+        height: 396px;
+        margin-left: 5px;
+    }
+
+    .category-banner-frame img {
+        border-radius: 8px;
+        width: 1210px;
+        height: 397px;
+    }
+
+    .page-body {
+        width: 100%;
+        height: 2150px;
+        margin-top: 50px;
+    }
+
+    .list-of-soundType-frame {
+        width: 1210px;
+        height: 80px;
+        margin-left: 145px;
+        display: flex;
+    }
+
+    .list-soundType {
+        height: 45px;
+        width: 980px;
+        display: flex;
+        gap: 35px;
+        border-bottom: 5px solid #0066CC;
+        margin-top: 10px;
+
+    }
+
+    .all {
+        height: 70px;
+        width: 60px;
+    }
+
+    .click-all {
+        height: 40px;
+        width: 60px;
+    }
+
+    .click-all a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0066CC;
+        border-bottom: 2px solid #0066CC;
+        padding-bottom: 9px;
+    }
+
+    .sound-series {
+        height: 70px;
+        width: 70px;
+        padding: 5px;
+    }
+
+    .click-sound-series a {
+        font-size: 15px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #515154;
+    }
+
+    .order {
+        width: 250px;
+        height: 60px;
+    }
+
+    .order select {
+        width: 160px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    select {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777;
+        border: 0.5px solid #e9e3e3;
+    }
+
+    #list {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .compare-iphone {
+        width: 160px;
+        height: 45px;
+        float: right;
+    }
+
+    .product-container {
+        margin-left: 145px;
+        width: 1210px;
+        height: 1280px;
+        column-gap: 25px;
+    }
+
+    .ipad-container {
+        height: 400px;
+        display: flex;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+
+    .product-frame {
+        height: 400px;
+        width: 285px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    #prod-label {
+        width: 65px;
+        height: 40px;
+        float: right;
+        padding: 5px;
+    }
+
+    #prod-img {
+        margin-top: 0px;
+        margin-left: 25px;
+    }
+
+    #prod-name a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #1D1D1F;
+        line-height: 27px;
+        margin-left: 20px;
+    }
+
+    #newPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #0066CC;
+        display: inline;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    #oldPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        text-decoration: line-through;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    #discount {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    .pager li {
+        list-style-type: none;
+        display: inline;
+        margin: 0 5px;
+    }
+
+    .pager ul {
+        margin-left: 41.5%;
+    }
+
+    .pager li span {
+        min-width: 35px;
+        height: 35px;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        border: 1px solid #0066CC;
+    }
+
+    .pager span,
+    .pager a {
+        border-radius: 8px;
+    }
+
+    .pager a {
+        min-width: 35px;
+        height: 35px;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        border: 1px solid #0066CC;
+    }
+
+    .next-page {
+        background-image: url("https://shopdunk.com/Themes/SD/Content/images/prev.png");
+        background-position: center;
+        background-repeat: no-repeat, repeat;
+        padding: 5px;
+        width: 35px;
+    }
+
+    .product-decription {
+        height: 500px;
+        width: 1517px;
+        margin-top: 60px;
+    }
+
+    .product-decription-frame {
+        height: 410px;
+        width: 1210px;
+        margin-left: 145px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .decription-content-frame {
+        height: 205px;
+        width: 1210px;
+
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-bottom: 7px;
+    }
+
+    .decription-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+        color: #515154;
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 0px;
+    }
+
+    .decription-content ul li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-left: 35px;
+        color: #515154;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <ul class="header-category-iphone">
+            <li id="text-header">
+                <a href="Home.html">Trang chủ &nbsp;</a>
+                <span class="delimiter">›&nbsp;</span>
+            </li>
+            <li id="text-header">
+                Phụ kiện
+            </li>
+        </ul>
+    </div>
+    <div class="category-body">
+        <div class="frame1">
+            <div class="frame-title">
+                <h1>Phụ kiện</h1>
+            </div>
+        </div>
+        <div class="category-banner">
+            <div class="category-banner-frame">
+                <div class="banner">
+                    <a href="#"><img
+                            src="https://shopdunk.com/images/uploaded/banner/thang%209%202023/phu-kien-t9.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="list-of-soundType-frame">
+                <div class="list-soundType">
+                    <div class="all">
+                        <div class="click-all">
+                            <a href="#">Tất cả</a>
+                        </div>
+                    </div>
+                    <div class="sound-series">
+                        <div class="click-sound-series">
+                            <a href="#">Cường lực</a>
+                        </div>
+                    </div>
+                    <div class="sound-series" style="width: 90px;">
+                        <div class="click-sound-series">
+                            <a href="#">Sạc, cáp</a>
+                        </div>
+                    </div>
+                    <div class="sound-series">
+                        <div class="click-sound-series">
+                            <a href="#">Bao da/ Ốp lưng</a>
+                        </div>
+                    </div>
+                    <div class="sound-series">
+                        <div class="click-sound-series">
+                            <a href="#">Sạc dự phòng</a>
+                        </div>
+                    </div>
+                    <div class="sound-series" style="width: 115px;">
+                        <div class="click-sound-series">
+                            <a href="#">Balo/ Túi chống sốc</a>
+                        </div>
+                    </div>
+                    <div class="sound-series" style="width: 115px;">
+                        <div class=" click-sound-series">
+                            <a href="#">Chuột/ Bàn phím</a>
+                        </div>
+                    </div>
+                    <div class="sound-series" style="width: 115px;">
+                        <div class="click-sound-series">
+                            <a href="#">Bút Apple Pencil</a>
+                        </div>
+                    </div>
+                    <div class="sound-series">
+                        <div class="click-sound-series">
+                            <a href="#">Máy ảnh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="compare-iphone">
+                        <select id="list" style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;">
+                            <option value="value1">Thứ tự hiển thị</option>
+                            <option value="value2">Giá cao đến thấp</option>
+                            <option value="value3">Mới nhất</option>
+                            <option value="value4">Tên: A đến Z</option>
+                            <option value="value5">Tên: Z đến A</option>
+                            <option value="value6">Giá thấp đến cao</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="ipad-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0018533_cuong-luc-zeelot-cho-apple-ipad-mieng-dan-paperlike_240.webp">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Cường Lực Zeelot cho<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; Apple iPad - Miếng dán... </a></h3>
+                        <p id="newPrice">390.000₫</p> &nbsp;
+                        <p id="oldPrice">490.000₫</p> &nbsp;
+                        <p id="discount">-28%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0003046_cuong-luc-apple-watch-zeelot_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Cường lực Apple Watch<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Zeelot</a>
+                        </h3>
+                        <p id="newPrice">250.000₫</p> &nbsp;
+                        <p id="oldPrice">350.000₫</p> &nbsp;
+                        <p id="discount">-28%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0003570_mieng-dan-cuong-luc-camera-zeelot-iphone-13-pro13-pro-max_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Miếng dán cường lực<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;camera Zeelot iPhone 13...</a></h3>
+                        <p id="newPrice">299.000₫</p> &nbsp;
+                        <p id="oldPrice">350.000₫</p> &nbsp;
+                        <p id="discount">-14%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0016024_cuong-luc-zeelot-apple-iphone-soildsleek-trong-suot_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Cường lực Zeelot Apple<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;iPhone Solidsleek - Trong...
+                            </a>
+                        </h3>
+                        <p id="newPrice">250.000₫</p> &nbsp;
+                        <p id="oldPrice">390.000₫</p> &nbsp;
+                        <p id="discount">-35%</p>
+                    </div>
+                </div>
+                <div class="ipad-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0004101_op-lung-iphone-14-pro-max-zagg-matte-iridescent_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Ốp lưng iPhone 14
+                                Pro Max<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;ZAGG Matte Iridescent</a>
+                        </h3>
+                        <p id="newPrice">340.000₫</p> &nbsp;
+                        <p id="oldPrice">780.000₫</p> &nbsp;
+                        <p id="discount">-50%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0003064_op-lung-zagg-cau-vong-magsafe-for-iphone-14-plus_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Ốp lưng ZAGG cầu vồng
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;Magsafe for iPhone 14 Plus</a></h3>
+                        <p id="newPrice">250.000₫</p> &nbsp;
+                        <p id="oldPrice">900.000₫</p> &nbsp;
+                        <p id="discount">-74%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0004071_op-lung-zagg-trong-suot-magsafe-for-iphone-14-plus_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Ốp lưng ZAGG trong suốt
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;Magsafe for iPhone 14 Plus</a></h3>
+                        <p id="newPrice">250.000₫</p> &nbsp;
+                        <p id="oldPrice">790.000₫</p> &nbsp;
+                        <p id="discount">-64%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0010745_cap-sac-usb-c-to-lightning-cable-1m-fae_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Cáp sạc USB-C to Lightning
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;Cable 1m FAE</a></h3>
+                        <p id="newPrice">590.000₫</p> &nbsp;
+                        <p id="oldPrice">690.000₫</p> &nbsp;
+                        <p id="discount">-14%</p>
+                    </div>
+                </div>
+                <div class="ipad-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img" style="margin-top: 40px;margin-bottom: 30px;"
+                            src="https://shopdunk.com/images/thumbs/0003598_mieng-dan-cuong-luc-zagg-plus-edge-iphone-14-pro-max_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Miếng dán cường lực
+                                Zagg
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;Plus Edge iPhone 14 Pro...
+                            </a></h3>
+                        <p id="newPrice">300.000₫</p> &nbsp;
+                        <p id="oldPrice">500.000₫</p> &nbsp;
+                        <p id="discount">-40%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0004054_op-lung-zagg-trong-suot-for-iphone-14-plus_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Ốp lưng ZAGG trong suốt
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;for iPhone 14 Plus</a>
+                        </h3>
+                        <p id="newPrice">250.000₫</p> &nbsp;
+                        <p id="oldPrice">500.000₫</p> &nbsp;
+                        <p id="discount">-50%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0003111_op-airpods-3-likgus_240.webp">
+                        <h3 id="prod-name" style="margin-bottom: 25px;"><a href="DetailProduct.html">Ốp Likgus AirPods
+                                3</a></h3>
+                        <p id="newPrice">199.000₫</p> &nbsp;
+                        <p id="oldPrice">250.000₫</p> &nbsp;
+                        <p id="discount">-52%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0003119_op-lung-iphone-14-pro-max-jinya-crystal_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Ốp lưng iPhone 14 Pro Max
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;Jinya Crystal</a></h3>
+                        <p id="newPrice">320.000₫</p> &nbsp;
+                        <p id="oldPrice">390.000₫</p> &nbsp;
+                        <p id="discount">-17%</p>
+                    </div>
+                </div>
+                <div class="pager">
+                    <ul>
+                        <li class="next-page">
+                            <a href="CategoryPhuKien.html"></a>
+                        </li>
+                        <li class="individual-page">
+                            <a href="CategoryPhuKien.html">1</a>
+                        </li>
+                        <li class="current-page">
+                            <span>2</span>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="product-decription">
+                <div class="product-decription-frame">
+                    <div class="decription-content-frame" style="height: 120px; margin-top: 40px;">
+                        <div class="decription-content">
+
+                            <p>
+                                <b>Phụ kiện chính hãng là gì?</b> Phụ kiện chính hãng là hàng được sản xuất bởi chính
+                                doanh nghiệp cung cấp hoặc do doanh nghiệp đối tác sản xuất theo hợp đồng đơn đặt hàng
+                                và được bán thông qua các kênh đại lý hoặc nhà phân phối. Những loại phụ kiện chính hãng
+                                này thường được làm giả rất nhiều do chất lượng phụ kiện cao tương ứng với giá thành
+                                tương đối mắc. Vì vậy, nhiều nơi sẽ làm giả nhái sản phẩm và bán với mức giá như hàng
+                                thật nhằm thu được chênh lệch lớn. Để có một phụ kiện đảm bảo chất lượng và thời gian sử
+                                dụng lâu dài, bạn cần tìm đến những địa chỉ uy tín, bán phụ kiện chính hãng để mua hàng,
+                                và ShopDunk chính là một trong những địa điểm bán phụ kiện chính hãng – giá tốt mà bạn
+                                không nên bỏ qua.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="decription-content-frame">
+                        <div class="decription-content">
+                            <h2>Phụ kiện điện tử nào đang có mặt tại ShopDunk?</h2>
+                            <p>
+                                Phụ kiện điện tử là các phụ kiện đi kèm, hỗ trợ cho việc sử dụng các thiết bị điện tử
+                                như: điện thoại, laptop, máy tính bảng, đồng hồ thông minh,… được thuận tiện hơn.
+
+                                Các dòng phụ kiện mà ShopDunk đang cung cấp chủ yếu là các phụ kiện chuyên dùng cho các
+                                sản phẩm của hãng Apple như: iPhone, iPad, MacBook, Apple Watch,…
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

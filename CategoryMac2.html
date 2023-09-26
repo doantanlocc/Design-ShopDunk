@@ -1,0 +1,688 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac</title>
+</head>
+<style>
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        margin: 0px;
+        line-height: 90px;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0px;
+    }
+
+
+
+    .header {
+        width: 100%;
+        height: 45px;
+        display: flex;
+    }
+
+    .header-category-iphone {
+        margin-left: 103px;
+    }
+
+    .header ul a {
+        text-decoration: none;
+        color: rgb(66, 66, 66);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+
+    .header ul li {
+        list-style-type: none;
+    }
+
+    .header li {
+        display: inline;
+    }
+
+    #text-header {
+        color: rgb(66, 66, 66);
+        font-size: 14px;
+    }
+
+    .category-body {
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    .frame1 {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+    }
+
+    .frame-title {
+        width: 1210px;
+        height: 50px;
+        margin-left: 145px;
+    }
+
+    .category-banner-frame {
+        width: 1210px;
+        height: 397px;
+        margin-left: 145px;
+    }
+
+    .banner {
+        width: 1250px;
+        padding: 0px;
+        height: 396px;
+        margin-left: 5px;
+    }
+
+    .category-banner-frame img {
+        border-radius: 8px;
+    }
+
+    .page-body {
+        width: 100%;
+        height: 2150px;
+        margin-top: 50px;
+    }
+
+    .list-of-macType-frame {
+        width: 1210px;
+        height: 80px;
+        margin-left: 145px;
+        display: flex;
+    }
+
+    .list-macType {
+        height: 45px;
+        width: 980px;
+        display: flex;
+        margin-top: 10px;
+
+    }
+
+    .all {
+        height: 70px;
+        width: 60px;
+    }
+
+    .click-all {
+        height: 40px;
+        width: 60px;
+    }
+
+    .click-all a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0066CC;
+        border-bottom: 2px solid #0066CC;
+        padding-bottom: 9px;
+    }
+
+    .mac-series {
+        height: 70px;
+        width: 85px;
+        padding: 5px;
+    }
+
+    .click-mac-series a {
+        font-size: 15px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #515154;
+    }
+
+    .mac-series {
+        height: 70px;
+        width: 120px;
+    }
+
+    .click-mac-series a {
+        font-size: 15px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #515154;
+    }
+
+    .compare {
+        width: 250px;
+        height: 60px;
+    }
+
+    .compare-mac {
+        width: 160px;
+        height: 45px;
+        float: right;
+        background: #fff;
+        border: 1px solid #515154;
+        border-radius: 8px;
+    }
+
+    .compare-mac a {
+        display: flex;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #515154;
+    }
+
+    .compare-mac img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .compare-mac-btn {
+        padding: 12px 15px;
+    }
+
+    .product-container {
+        margin-left: 145px;
+        width: 1210px;
+        height: 1330px;
+        column-gap: 25px;
+    }
+
+    .iphone-container {
+        height: 400px;
+        display: flex;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+
+    .product-frame {
+        height: 400px;
+        width: 285px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    #prod-label {
+        width: 100px;
+        height: 30px;
+        float: right;
+        padding: 5px;
+    }
+
+    #prod-img {
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+
+    #prod-name a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #1D1D1F;
+        line-height: 27px;
+        margin-left: 20px;
+    }
+
+    #newPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #0066CC;
+        display: inline;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    #oldPrice {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        text-decoration: line-through;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    #discount {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        color: rgb(132, 132, 139);
+        font-size: 14px;
+    }
+
+    .pager li {
+        list-style-type: none;
+        display: inline;
+        margin: 0 5px;
+    }
+
+    .pager ul {
+        margin-left: 41.5%;
+    }
+
+    .pager li span {
+        min-width: 35px;
+        height: 35px;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        border: 1px solid #0066CC;
+    }
+
+    .pager span,
+    .pager a {
+        border-radius: 8px;
+    }
+
+    .pager a {
+        min-width: 35px;
+        height: 35px;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        border: 1px solid #0066CC;
+    }
+
+    .next-page {
+        background-image: url("https://shopdunk.com/Themes/SD/Content/images/prev.png");
+        background-position: center;
+        background-repeat: no-repeat, repeat;
+        padding: 5px;
+        width: 35px;
+    }
+
+    .topic-block-body {
+        width: 1210px;
+        height: 230px;
+    }
+
+    .topic-block-body-frame {
+        width: 1210px;
+        height: 210px;
+        display: flex;
+        gap: 25px;
+        margin-left: 145px;
+    }
+
+    .topic-block-content {
+        width: 600px;
+        height: 210px;
+        display: flex;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .content-img-frame {
+        width: 250px;
+        height: 210px;
+    }
+
+    .content-img img {
+        width: 250px;
+        height: 210px;
+        border-radius: 8px;
+    }
+
+    .title {
+        width: 340px;
+        height: 210px;
+    }
+
+    .title h3 {
+        margin-left: 20px;
+        font-size: 23px;
+        padding: 20px;
+        color: #1D1D1F;
+    }
+
+    .title a {
+        margin-left: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #0066CC;
+        font-size: 15px;
+    }
+
+    .product-decription {
+        height: 500px;
+        width: 1517px;
+    }
+
+    .product-decription-frame {
+        height: 410px;
+        width: 1210px;
+        margin-left: 145px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .decription-content-frame {
+        height: 130px;
+        width: 1210px;
+
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-bottom: 7px;
+    }
+
+    .decription-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+        color: #515154;
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 0px;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <ul class="header-category-iphone">
+            <li id="text-header">
+                <a href="Home.html">Trang chủ &nbsp;</a>
+                <span class="delimiter">›&nbsp;</span>
+            </li>
+            <li id="text-header">
+                Mac
+            </li>
+        </ul>
+    </div>
+    <div class="category-body">
+        <div class="frame1">
+            <div class="frame-title">
+                <h1>Mac</h1>
+            </div>
+        </div>
+        <div class="category-banner">
+            <div class="category-banner-frame">
+                <div class="banner">
+                    <a href="#"><img src="https://shopdunk.com/images/uploaded/Copy%20of%20banner%20mac2-21.jpeg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="list-of-macType-frame">
+                <div class="list-macType">
+                    <div class="all" style="width:80px">
+                        <div class="click-all">
+                            <a href="#">Tất cả</a>
+                        </div>
+                    </div>
+                    <div class="mac-series">
+                        <div class="click-mac-series">
+                            <a href="#">MacBook Pro</a>
+                        </div>
+                    </div>
+                    <div class="mac-series" style="width:115px">
+                        <div class="click-mac-series">
+                            <a href="#">MacBook Air</a>
+                        </div>
+                    </div>
+                    <div class="mac-series" style="width:65px">
+                        <div class="click-mac-series">
+                            <a href="#">iMac</a>
+                        </div>
+                    </div>
+                    <div class="mac-series" style="width:90px">
+                        <div class="click-mac-series">
+                            <a href="#">Mac Mini</a>
+                        </div>
+                    </div>
+                    <div class="mac-series" style="width:90px">
+                        <div class="click-mac-series">
+                            <a href="#">Mac Pro</a>
+                        </div>
+                    </div>
+                    <div class="mac-series">
+                        <div class="click-mac-series">
+                            <a href="#">Mac Studio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="compare">
+                    <div class="compare-mac">
+                        <a href="#" class="compare-mac-btn"><img
+                                src="https://shopdunk.com/images//uploaded-source/icon//comparison.png">&nbsp;So
+                            sánh
+                            Mac</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="iphone-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0011572_mac-mini-m2-10-core-gpu-8gb-ram-512gb-ssd_240.jpeg">
+                        <h3 id="prod-name" style="margin-bottom: 0px;"><a href="DetailProduct.html">Mac mini M2 (10-core
+                                GPU|
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;8GB RAM | 512GB SSD)
+                            </a></h3>
+                        <p id="newPrice">19.650.000₫</p> &nbsp;
+                        <p id="oldPrice">23.990.000₫</p> &nbsp;
+                        <p id="discount">-18%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0011783_macbook-pro-13-inch-m2-10-core-8gb-ram-512gb-ssd_240.png">
+                        <h3 id="prod-name" style="margin-bottom: 0px;"><a href="DetailProduct.html">MacBook Pro 13 inch
+                                M2 (10<br>&nbsp;&nbsp;&nbsp;&nbsp;core| 8GB RAM|
+                                512GB...)</a></h3>
+                        <p id="newPrice">34.390.000₫</p> &nbsp;
+                        <p id="oldPrice">41.990.000₫</p> &nbsp;
+                        <p id="discount">-18%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0011783_macbook-pro-13-inch-m2-10-core-8gb-ram-512gb-ssd_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">MacBook Pro 13 inch
+                                M2 (10<br>&nbsp;&nbsp;&nbsp;&nbsp;core| 16GB RAM|
+                                256GB...)</a></h3>
+                        <p id="newPrice">35.690.000₫</p> &nbsp;
+                        <p id="oldPrice">41.990.000₫</p> &nbsp;
+                        <p id="discount">-15%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0011783_macbook-pro-13-inch-m2-10-core-8gb-ram-512gb-ssd_240.png">
+                        <h3 id="prod-name"><a href="DetailProduct.html">MacBook Pro 13 inch
+                                M2 (10<br>&nbsp;&nbsp;&nbsp;&nbsp;core| 16GB RAM|
+                                512GB...)</a></h3>
+                        <p id="newPrice">39.990.000₫</p> &nbsp;
+                        <p id="oldPrice">45.990.000₫</p> &nbsp;
+                        <p id="discount">-13%</p>
+                    </div>
+                </div>
+                <div class="iphone-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://s.net.vn/YOBB">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0011572_mac-mini-m2-10-core-gpu-8gb-ram-512gb-ssd_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Mac mini M2 Pro
+                                (16-Core<br>&nbsp;&nbsp;&nbsp;&nbsp;GPU| 16GB RAM | 512GB...)
+                            </a></h3>
+                        <p id="newPrice">31.950.000₫</p> &nbsp;
+                        <p id="oldPrice">37.990.000₫</p> &nbsp;
+                        <p id="discount">-15%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://shopdunk.com/images/uploaded/icon/cto.png">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0011572_mac-mini-m2-10-core-gpu-8gb-ram-512gb-ssd_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Mac mini M2 (10-Core
+                                GPU|<br>&nbsp;&nbsp;&nbsp;&nbsp;16GB RAM | 256GB SSD)...
+                            </a></h3>
+                        <p id="newPrice">19.950.000₫</p> &nbsp;
+                        <p id="oldPrice">22.990.000₫</p> &nbsp;
+                        <p id="discount">-13%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://shopdunk.com/images/uploaded/icon/cto.png">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0011572_mac-mini-m2-10-core-gpu-8gb-ram-512gb-ssd_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Mac mini
+                                M2(10-Core<br>&nbsp;&nbsp;&nbsp;&nbsp;GPU|16GB RAM |512...)
+                            </a></h3>
+                        <p id="newPrice">25.450.000₫</p> &nbsp;
+                        <p id="oldPrice">27.990.000₫</p> &nbsp;
+                        <p id="discount">-9%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://shopdunk.com/images/uploaded/icon/cto.png">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0011572_mac-mini-m2-10-core-gpu-8gb-ram-512gb-ssd_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Mac mini M2 Pro
+                                (16-Core<br>&nbsp;&nbsp;&nbsp;&nbsp;GPU|32GB RAM | 512GB...)
+                            </a></h3>
+                        <p id="newPrice">40.950.000₫</p> &nbsp;
+                        <p id="oldPrice">42.990.000₫</p> &nbsp;
+                        <p id="discount">-4%</p>
+                    </div>
+                </div>
+                <div class="iphone-container">
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://shopdunk.com/images/uploaded/icon/cto.png">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0011572_mac-mini-m2-10-core-gpu-8gb-ram-512gb-ssd_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Mac mini M2 (10-Core
+
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;GPU|24GB RAM | 256GB...)</a></h3>
+                        <p id="newPrice">25.950.000₫</p> &nbsp;
+                        <p id="oldPrice">29.990.000₫</p> &nbsp;
+                        <p id="discount">-13%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" src="https://shopdunk.com/images/uploaded/icon/cto.png">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0011572_mac-mini-m2-10-core-gpu-8gb-ram-512gb-ssd_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">Mac mini M2 (10-Core
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;GPU|24GB RAM | 512GB...)</a></h3>
+                        <p id="newPrice">30.950.000₫</p> &nbsp;
+                        <p id="oldPrice">44.990.000₫</p> &nbsp;
+                        <p id="discount">-31%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" style="width: 69px; height: 30px;"
+                            src="https://shopdunk.com/images/uploaded/icon/new.png">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0018138_macbook-air-15-inch-m2-8gb-ram-256gb-ssd_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">MacBook Air 15 inch M2
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;(8GB RAM | 256GB SSD)</a></h3>
+                        <p id="newPrice">30.990.000₫</p> &nbsp;
+                        <p id="oldPrice">35.990.000₫</p> &nbsp;
+                        <p id="discount">-13%</p>
+                    </div>
+                    <div class="product-frame">
+                        <img id="prod-label" style="width: 69px; height: 30px;"
+                            src="https://shopdunk.com/images/uploaded/icon/new.png">
+                        <img id="prod-img"
+                            src="https://shopdunk.com/images/thumbs/0018138_macbook-air-15-inch-m2-8gb-ram-256gb-ssd_240.jpeg">
+                        <h3 id="prod-name"><a href="DetailProduct.html">MacBook Air 15 inch M2
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;(8GB RAM | 512GB SSD)</a></h3>
+                        <p id="newPrice">35.990.000₫</p> &nbsp;
+                        <p id="oldPrice">42.990.000₫</p> &nbsp;
+                        <p id="discount">-16%</p>
+                    </div>
+                </div>
+                <div class="pager">
+                    <ul>
+                        <li class="next-page">
+                            <a href="CategoryMac.html"></a>
+                        </li>
+                        <li class="individual-page">
+                            <a href="CategoryMac.html">1</a>
+                        </li>
+                        <li class="current-page">
+                            <span>2</span>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="topic-block-body">
+                <div class="topic-block-body-frame">
+                    <div class="topic-block-content">
+                        <div class="content-img-frame">
+                            <div class="content-img">
+                                <a href="#"><img
+                                        src="https://shopdunk.com/images/uploaded/trang%20danh%20muc/mac/Image-Standard-4.png"></a>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#">
+                                <h3>Tìm Mac <br> phù hợp với bạn</h3>
+                            </a>
+                            <a href="#">So sánh các iPhone ›</a>
+                        </div>
+                    </div>
+                    <div class="topic-block-content">
+                        <div class="content-img-frame">
+                            <div class="content-img">
+                                <a href="#"><img
+                                        src="https://shopdunk.com/images/uploaded/trang%20danh%20muc/mac/Image-Standard-5.png"></a>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#">
+                                <h3>Phụ kiện Mac <br> thường mua kèm</h3>
+                            </a>
+                            <a href="#">Tìm phụ kiện ›</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-decription">
+                <div class="product-decription-frame">
+                    <div class="decription-content-frame">
+                        <div class="decription-content">
+                            <h2>Giới thiệu về Apple Mac</h2>
+                            <p>
+                                Apple Mac là dòng máy tính của thương hiệu Apple Inc. phổ biến trên toàn thế giới và
+                                được đông đảo người dùng yêu thích. Tính đến thời điểm hiện tại, Apple mang đến cho
+                                người dùng 5 dòng sản phẩm về Mac, đó là: MacBook, iMac, Mac mini, Mac Pro, Mac Studio
+                                và Displays. Đây đều là những sản phẩm vô cùng nổi tiếng trên thị trường và mang đến cho
+                                người dùng những trải nghiệm vô cùng tuyệt vời.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="decription-content-frame">
+                        <div class="decription-content">
+                            <h2 style="margin-top:5px ;">Giới thiệu về MacBook</h2>
+                            <p>
+                                MacBook là dòng máy tính xách tay của Apple Inc. sản xuất và phát triển.
+                                Đặc trưng của dòng này là thiết kế sang trọng cùng trải nghiệm mượt mà, mà nó đem lại
+                                nhờ chạy hệ điều hành macOS – hệ điều hành do chính Apple phát triển.
+                            </p>
+                            <p>
+                                MacBook có 2 dòng sản phẩm chính là MacBook Air và MacBook Pro. Ngoài ra, Apple còn phát
+                                triển thêm dòng MacBook M1 sử dụng con chip Apple Silicon M1 do chính Apple sản xuất
+                                (trước đó họ sử dụng chip Intel hoặc AMD – một bên thứ 3 cung cấp chipset CPU).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
