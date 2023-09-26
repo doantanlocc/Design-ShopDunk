@@ -1,0 +1,383 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    body {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .header {
+        width: 100%;
+        height: 45px;
+    }
+
+    .header-frame {
+        width: 1210px;
+        height: 45px;
+        margin-left: 145px;
+        display: flex;
+    }
+
+    .header-frame ul li {
+        list-style-type: none;
+    }
+
+    .header-frame ul {
+        padding: 0px;
+    }
+
+    .header-frame li {
+        display: inline;
+    }
+
+    .header-frame a {
+        text-decoration: none;
+        color: #545353;
+        font-size: 17px;
+    }
+
+    .detailproduct-body {
+        width: 100%;
+        height: 1500px;
+    }
+
+    .detail-product-first {
+        width: 1210px;
+        height: 800px;
+        margin-left: 145px;
+        display: flex;
+    }
+
+    .detail-product-img,
+    .detail-product-info {
+        height: 800px;
+        width: 605px;
+    }
+
+    .detail-product-picture {
+        width: 605px;
+        height: 680px;
+        border: 1px solid #ebebeb;
+        background-color: #ebebeb;
+        border-radius: 8px;
+    }
+
+    .detail-product-picture-frame {
+        width: 550px;
+        height: 620px;
+        margin-top: 25px;
+        margin-left: 25px;
+        background-color: white;
+    }
+
+    .small-pictures {
+        width: 605px;
+        height: 115px;
+        display: flex;
+        gap: 12px;
+    }
+
+    .small-pictures-frame {
+        width: 110px;
+        height: 105px;
+        margin-top: 5px;
+        border-radius: 8px;
+    }
+
+    .picture-frame {
+        width: 110px;
+        height: 105px;
+        border-radius: 8px;
+
+    }
+
+    .small-pictures-frame img {
+        width: 110px;
+        height: 105px;
+        border-radius: 8px;
+        border: 1px solid #c3c0c0;
+    }
+
+    .detail-product-info-first {
+        width: 605px;
+        height: 100px;
+    }
+
+    .product-name {
+        width: 605px;
+        height: 50px;
+        border: 1px solid white;
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+    }
+
+    .jugde-and-compare {
+        width: 605px;
+        height: 60px;
+        border: 1px solid white;
+    }
+
+    .jugde-and-compare-frame {
+        width: 278px;
+        height: 17px;
+        margin-left: 0px;
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .all {
+        width: 580px;
+        height: 50px;
+        margin-left: 40px;
+        border-bottom: 1px solid #d7d7d7;
+    }
+
+    .rating {
+        width: 90px;
+        background-image: url("https://shopdunk.com/images/uploaded/icon/icon-star-1.png");
+    }
+
+    .product-reviews {
+        width: 105px;
+    }
+
+    .compare {
+        width: 90px;
+        background-image: url("https://shopdunk.com/images/uploaded-source/icon/compare-icon.png");
+        background-repeat: no-repeat;
+    }
+
+    .jugde-and-compare a {
+        text-decoration: none;
+        color: #0066CC;
+    }
+
+    .area {
+        width: 250px;
+        height: 50px;
+        float: right;
+        margin-top: -35px;
+    }
+
+    .area-frame {
+        width: 170px;
+        height: 50px;
+        float: right;
+    }
+
+    .area select {
+        width: 170px;
+        height: 50px;
+        border-radius: 8px;
+    }
+
+    #area-option {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .detail-product-info-second {
+        width: 620px;
+        height: 500px;
+        border: 1px solid black;
+        margin-top: 20px;
+    }
+
+    .price-frame {
+        width: 620px;
+        height: 60px;
+        border: 1px solid black;
+    }
+
+    .price {
+        margin-top: 20px;
+        width: 250px;
+        height: 40px;
+        border: 1px solid black;
+        margin-left: 40px;
+        display: flex;
+    }
+
+    .new-price {
+        width: 125px;
+        height: 40px;
+        border: 1px solid black;
+    }
+
+    .new-price span {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #0066CC;
+        font-size: 23px;
+    }
+
+    .old-price span {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+        text-align: center;
+        font-size: 19px;
+        color: #777;
+        text-decoration: line-through;
+    }
+
+    .attributes {
+        width: 620px;
+        height: 150px;
+        border: 1px solid black;
+    }
+
+    .attributes-frame {
+        width: 500px;
+        margin-left: 40px;
+        height: 150px;
+        border: 1px solid black;
+    }
+
+    .capacity-frame {
+        height: 75px;
+        width: 500px;
+        border: 1px solid black;
+    }
+
+    .capacity-frame ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    .capacity-frame li {
+        display: inline;
+        border: 1px solid #777;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .capacity-frame p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777;
+        font-size: 13px;
+    }
+
+    .capacity-frame a {
+        text-decoration: none;
+        color: #777;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="header-frame">
+            <ul>
+                <li class="trangchu-header-text"><a href="Home.html">Trang chủ ›&nbsp;</a></li>
+                <li class="iphone-header-text"><a href="Category.html">iPhone ›&nbsp;</a></li>
+                <li class="iphone-14-series"><a href="#">iPhone 14 series ›&nbsp;</a></li>
+                <li class="iphone-14-promax"><a href="#" style="font-size: 14px;">iPhone 14 Pro Max 128GB</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="detailproduct-body">
+        <div class="detail-product-first">
+            <div class="detail-product-img">
+                <div class="detail-product-picture">
+                    <div class="detail-product-picture-frame">
+                        <a href="#"><img src="https://shopdunk.com/images/thumbs/0018632_space-black_550.jpeg"></a>
+                    </div>
+                </div>
+                <div class="small-pictures">
+                    <div class="small-pictures-frame">
+                        <div class="picture-frame">
+                            <a href="#"><img src="https://shopdunk.com/images/thumbs/0018632_space-black_550.jpeg"></a>
+                        </div>
+                    </div>
+                    <div class="small-pictures-frame">
+                        <div class="picture-frame">
+                            <a href="#"><img src="https://shopdunk.com/images/thumbs/0018633_space-black_550.jpeg"></a>
+                        </div>
+                    </div>
+                    <div class="small-pictures-frame">
+                        <div class="picture-frame">
+                            <a href="#"><img src="https://shopdunk.com/images/thumbs/0018634_space-black_550.jpeg"></a>
+                        </div>
+                    </div>
+                    <div class="small-pictures-frame">
+                        <div class="picture-frame">
+                            <a href="#"><img src="https://shopdunk.com/images/thumbs/0018635_space-black_550.jpeg"></a>
+                        </div>
+                    </div>
+                    <div class="small-pictures-frame">
+                        <div class="picture-frame">
+                            <a href="#"><img src="https://shopdunk.com/images/thumbs/0018636_space-black_550.jpeg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-product-info">
+                <div class="detail-product-info-first">
+                    <div class="product-name">
+                        <h2>iPhone 14 Pro Max 128GB</h2>
+                    </div>
+                    <div class="jugde-and-compare">
+                        <div class="all">
+                            <div class="jugde-and-compare-frame">
+                                <div class="rating">
+
+                                </div>
+                                <div class="product-reviews">
+                                    <a href="#">185 đánh giá | </a>
+                                </div>
+                                <div class="compare">
+                                    <a href="#" style="margin-left: 20px;margin-bottom: 5px;">So sánh</a>
+                                </div>
+                            </div>
+                            <div class="area">
+                                <div class="area-frame">
+                                    <select id="area-option">
+                                        <option value="option1">Vui lòng chọn</option>
+                                        <option value="option2">Khu vực miền Bắc</option>
+                                        <option value="option3">Khu vực miền Nam</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-product-info-second">
+                    <div class="price-frame">
+                        <div class="price">
+                            <div class="new-price">
+                                <span>26.150.000₫
+                                </span>
+                            </div>
+                            <div class="old-price">
+                                <span>34.990.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attributes">
+                        <div class="attributes-frame">
+                            <div class="capacity-frame">
+                                <p style="margin-top: 0px;">Dung lượng</p>
+                                <ul>
+                                    <li class="capacity"><a href="#">128GB</a></li>
+                                    <li class="capacity"><a href="#">256GB</a></li>
+                                    <li class="capacity"><a href="#">512GB</a></li>
+                                    <li class="capacity"><a href="#">1TB</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
