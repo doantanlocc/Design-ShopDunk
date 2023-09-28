@@ -9,18 +9,15 @@ article {
 }
 
 h1 {
-    vertical-align: top;
-    text-align: center;
+    vertical-align: middle;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: bold;
-    margin-top: 140px;
+    margin-left: 700px;
 }
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    font-size: 18px;
 }
 
 h3 a {
@@ -29,102 +26,110 @@ h3 a {
 
 }
 
-table {
-    padding: 5px;
-    margin-left: 120px;
-    border-spacing: 20px;
+.product-container {
+    width: 100%;
+    height: 580px;
+
 }
 
-.product img {
-    margin-left: 25px;
+.product {
+    height: 3600px;
+    width: 100%;
 }
 
-#product-td {
+.product-frame {
+    margin-top: 40px;
+    height: 400px;
+    width: 1210px;
+    margin-left: 140px;
+    display: flex;
+    gap: 25px;
+}
+
+.product-list-frame {
+    height: 400px;
     width: 285px;
-    height: 408px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid white;
+    background-color: #FFFFFF;
     border-radius: 8px;
 }
 
+#prod-name a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    color: #1D1D1F;
+    line-height: 27px;
+    margin-left: 20px;
+}
+
 #prod-label {
+    width: 55px;
+    height: 30px;
     float: right;
-    max-width: 100px;
-    position: relative;
-    bottom: 5px;
-
-
+    padding: 5px;
 }
 
 #prod-img {
-    vertical-align: middle;
-    max-width: 100%;
-    max-height: 300px;
-
-}
-
-#prod-name {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: black;
-    text-align: left;
-    margin-left: 20px;
-
+    margin-top: 0px;
+    margin-left: 25px;
 }
 
 #newPrice {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    text-align: left;
+    font-weight: bold;
     color: #0066CC;
     display: inline;
     margin-left: 20px;
+    font-size: 15px;
 }
 
 #oldPrice {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: small;
-    text-align: left;
-    color: rgb(132, 132, 139);
+    font-family: Arial, Helvetica, sans-serif;
     display: inline;
     text-decoration: line-through;
+    color: rgb(132, 132, 139);
+    font-size: 14px;
 }
 
 #discount {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: inline;
     color: rgb(132, 132, 139);
-}
-
-.viewAll {
-    border: groove;
-    border-radius: 8px;
-    padding: 5px 50px;
-    display: inline-block;
-    border: 1px solid rgb(99, 126, 235);
-    margin-left: 42%;
-    width: 145px;
-    height: 30px;
-    text-align: center;
-}
-
-.viewAll a {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(99, 126, 235);
     font-size: 14px;
-    padding: 0px 5px;
+}
+
+.view-all-frame {
+    margin-top: 30px;
+    height: 40px;
+}
+
+.view-all-btn-frame {
+    margin-left: 640px;
+}
+
+.view-all-btn-frame a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid #0066CC;
+    border-radius: 8px;
+    color: #0066CC;
+    padding: 10px 45px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.view-all-btn-frame a:hover {
+    color: #FFFFFF;
+    background-color: #0066CC;
 
 }
 
-#view {
-    text-align: center;
-
-}
 
 .promotion {
     width: 100%;
     height: 200px;
+    margin-bottom: 50px;
 }
 
 .promotion-body {
